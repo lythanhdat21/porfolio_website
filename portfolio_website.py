@@ -3,8 +3,6 @@ import google.generativeai as genai
 
 api_key = st.secrets["GOOGLE_API_KEY"]
 
-# genai.configure(api_key="AIzaSyBvNGzZOziNPBLqoMRLHjdyYb7IZLlgPp0")
-
 genai.configure(api_key=api_key)
 model = genai.GenerativeModel('gemini-1.5-flash')
 
